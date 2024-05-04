@@ -1,0 +1,1 @@
+import googleStrategy from 'passport-google-oauth20';
