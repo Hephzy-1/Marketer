@@ -11,11 +11,6 @@ const app = express()
 app.use(express.json())
 app.use(express.static(path.join('views')));
 
-// LOGIN FUNCTION
-export function isLogged (req, res, next) {
-  req.user ? next() : res.sendStatus(401);
-}
-
 // DEFAULT RESPONSE
 app.get('/', (req, res) => {
   res.sendFile('login.html')
